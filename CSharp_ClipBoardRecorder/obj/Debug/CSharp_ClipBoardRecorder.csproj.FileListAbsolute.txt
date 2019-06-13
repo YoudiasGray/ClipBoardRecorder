@@ -1,0 +1,14 @@
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\MainWindow.g.cs
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\App.g.cs
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder_MarkupCompile.cache
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder_MarkupCompile.lref
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\bin\Debug\CSharp_ClipBoardRecorder.exe.config
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\bin\Debug\CSharp_ClipBoardRecorder.exe
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\bin\Debug\CSharp_ClipBoardRecorder.pdb
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\MainWindow.baml
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.g.resources
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.Properties.Resources.resources
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.csproj.GenerateResource.Cache
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.exe
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.pdb
+J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.csprojResolveAssemblyReference.cache
