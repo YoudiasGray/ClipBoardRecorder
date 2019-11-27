@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,10 +16,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace CSharp_ClipBoardRecorder
 {
-
 
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
@@ -32,6 +33,48 @@ namespace CSharp_ClipBoardRecorder
         string PreContent = "";  //用作优化，如果和上一次一样，则不记录        
         bool StartRecordFlag = false;
         string NextLine = "\n";
+
+
+        //update 2019年11月6日19:48:33
+        //改为timer，每隔200ms获取一次数据进行对比，如果有差异进行保存
+        DispatcherTimer timer;
+
+        void UpdateClipData(object sender,EventArgs e)
+        {
+            try
+            {
+                string tmp = GetStringData();
+                if (tmp != this.PreContent && this.StartRecordFlag == true)
+                //if (tmp != this.PreContent)
+                {
+                    this.PreContent = tmp;
+                    tmp = FormatString(tmp);
+                    this.ShowInText(tmp);
+                    //https://blog.csdn.net/zhuyu19911016520/article/details/46502857
+                    StreamWriter tmpSW = new StreamWriter(this.FileReader, Encoding.UTF8);
+                    tmpSW.Write(tmp);
+                    tmpSW.Flush();  //测试过直接点X关闭，数据也能写入文件                    
+                }
+                //Thread.Sleep(200);
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+
+            }
+        }
+
+        void StartTimer()
+        {
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromMilliseconds(200);
+            timer.Tick += UpdateClipData;
+            timer.Start();
+        }
+
         //初始加载窗体，这个时候只有Set/Exit 按钮可用
         public MainWindow()
         {
@@ -40,6 +83,9 @@ namespace CSharp_ClipBoardRecorder
             this.Stop.IsEnabled = false;
             //string abc = "测试中文字符";
             //this.Content.Content = abc;
+
+            StartTimer();
+            
         }
 
         //设置log文件，如果没有选择合适的文件询问是否重新选择或者退出
@@ -80,6 +126,17 @@ namespace CSharp_ClipBoardRecorder
 
         }
 
+        //对点击X 关闭添加验证过程
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+        
+        }
+
+        //protected override void OnMax(System.ComponentModel.Resiz e)
+        //{
+
+        //}
 
         //开始按钮
         //按下开始按钮后，就只有stop按钮可用
@@ -153,9 +210,9 @@ namespace CSharp_ClipBoardRecorder
         protected override void OnSourceInitialized(EventArgs e)
         {
 
-            base.OnSourceInitialized(e);
-            HwndSource hs = PresentationSource.FromVisual(this) as HwndSource;            
-            hs.AddHook(WndProc);            
+            //base.OnSourceInitialized(e);
+            //HwndSource hs = PresentationSource.FromVisual(this) as HwndSource;            
+            //hs.AddHook(WndProc);            
         }
         //https://blog.csdn.net/xlm289348/article/details/8050957
         IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
@@ -174,6 +231,7 @@ namespace CSharp_ClipBoardRecorder
                     tmpSW.Write(tmp);
                     tmpSW.Flush();  //测试过直接点X关闭，数据也能写入文件                    
                 }
+                //Thread.Sleep(200);
             }
             catch (Exception ex)
             {
@@ -184,6 +242,14 @@ namespace CSharp_ClipBoardRecorder
                 
             }
             return IntPtr.Zero;
+        }
+
+        private void button_mini_Click(object sender, RoutedEventArgs e)
+        {
+            //自定义最小化
+            string test = "asd";
+            test = "asd" +DateTime.Now.ToShortDateString();
+
         }
     }
 }

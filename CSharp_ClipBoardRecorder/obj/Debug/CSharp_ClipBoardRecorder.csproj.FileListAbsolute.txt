@@ -12,3 +12,17 @@ J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoa
 J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.exe
 J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.pdb
 J:\VS2017\C#\UniversalSolution\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.csprojResolveAssemblyReference.cache
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\bin\Debug\CSharp_ClipBoardRecorder.exe.config
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\bin\Debug\CSharp_ClipBoardRecorder.exe
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\bin\Debug\CSharp_ClipBoardRecorder.pdb
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\MainWindow.g.cs
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\App.g.cs
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder_MarkupCompile.cache
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder_MarkupCompile.lref
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\MainWindow.baml
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.g.resources
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.Properties.Resources.resources
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.csproj.GenerateResource.cache
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.exe
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.pdb
+D:\MyData\Remote\Git\GitHub\ClipBoardRecorder\CSharp_ClipBoardRecorder\obj\Debug\CSharp_ClipBoardRecorder.csprojResolveAssemblyReference.cache
